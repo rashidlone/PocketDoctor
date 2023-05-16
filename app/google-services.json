@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "250345151656",
+    "firebase_url": "https://pocketdoctor-5d44c.firebaseio.com",
+    "project_id": "pocketdoctor-5d44c",
+    "storage_bucket": "pocketdoctor-5d44c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:250345151656:android:f6d55d292425e8f3",
+        "android_client_info": {
+          "package_name": "com.rashedlone.pocketdoctor"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "250345151656-otnj593k8tkc80kmlnlaim5duuhsd1uu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.rashedlone.pocketdoctor",
+            "certificate_hash": "22580575cdd42714dfe69719119ec8f5d3078dd6"
+          }
+        },
+        {
+          "client_id": "250345151656-1i8rq2aifq1idkpffimrl4lj0ldk28kn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBGvIrvfeMkchI8ctLaSbv5Sp_lHASymgQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "250345151656-1i8rq2aifq1idkpffimrl4lj0ldk28kn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

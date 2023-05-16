@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Pocket Doctor</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="full_banner">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="banner_ad_unit_id">ca-app-pub-3940256099942544/6300978111</string>
+
+
+    <string name="action_settings">Settings</string>
+    <string name="save">Save</string>
+    <string name="not_empty">This field cannot be empty!</string>
+    <string name="emergency_msg">Hello! I\'m having a medical emergency, This is my location:</string>
+    <string name="emer_info">Emergency Kit and Medical Info.</string>
+   <string name="click_on_any_item_to_expand">* click on any item to expand!</string>
+
+
+</resources>

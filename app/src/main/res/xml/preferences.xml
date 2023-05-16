@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto">
+
+
+    <PreferenceCategory
+        android:title="Settings">
+
+
+        <EditTextPreference
+            android:defaultValue="2"
+            android:inputType="number"
+            android:title="Repeat Alarm after: (minutes)"
+            android:summary="Enter time in minutes after the alarm will repeat."
+            android:key="alarm_time"
+            />
+
+        <PreferenceScreen
+            android:title="Clear Emergency Contacts"
+            android:key="remove_contacts"
+            android:textColor="#000000"
+            android:summary="Remove emergency contacts to add new ones.">
+
+        </PreferenceScreen>
+
+        <PreferenceScreen
+            android:title="Remove Blood Group"
+            android:key="remove_blood_group"
+            android:textColor="#000000"
+            android:summary="Change or remove blood group type.">
+
+        </PreferenceScreen>
+
+
+        <EditTextPreference
+            android:defaultValue="@string/emergency_msg"
+            android:inputType="text"
+            android:title="Quick Emergency Message"
+            android:summary="Define a quick emergency message that will be included in the sms when there is an emergency."
+            android:key="sms_body"
+            />
+
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="switch_preference_1"
+            android:summary="Automatically sync data from the server after alteration."
+            android:title="Auto Sync Data" />
+
+        <EditTextPreference
+            android:defaultValue="60"
+            android:summary="Refresh interval for auto data sync (in minutes)"
+            android:key="edit_text_preference_1"
+            android:inputType="number"
+            android:dependency="switch_preference_1"
+            android:disableDependentsState="false"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="Sync Data Interval" />
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="switch_preference_2"
+            android:summary="Lower the data usage."
+            android:title="Lower Data Usage" />
+
+
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="About">
+
+
+        <PreferenceScreen
+            android:title="@string/app_name"
+            android:key="try"
+            android:textColor="#000000"
+            android:summary="Emergency kit and Medical Info.">
+
+        </PreferenceScreen>
+
+        <PreferenceScreen
+            android:title="Developed By"
+            android:textColor="#000000"
+            android:key="developer"
+            android:summary="Raashid Lone">
+
+
+        </PreferenceScreen>
+
+        <PreferenceScreen
+            android:title="Version"
+            android:key="ver"
+            android:textColor="#000000"
+            android:summary=""
+            >
+
+
+
+        </PreferenceScreen>
+
+
+    </PreferenceCategory>
+
+
+</PreferenceScreen>

@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/main"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/header_cover_image"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@drawable/banner"
+            android:alpha="0.7"
+            android:scaleType="fitCenter"
+             />
+
+        <ImageButton
+            android:id="@+id/user_profile_photo"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_below="@+id/header_cover_image"
+            android:background="@drawable/doctor"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="-60dp"
+            android:elevation="5dp"
+            android:scaleType="centerCrop"
+            android:adjustViewBounds="true"
+             />
+
+        <RelativeLayout
+            android:id="@+id/profile_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/header_cover_image"
+            android:background="@drawable/pink_gradient"
+            android:elevation="4dp"
+            android:paddingBottom="24dp">
+
+
+            <TextView
+                android:id="@+id/user_profile_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="76dp"
+                android:text=""
+                android:textColor="#fff"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/user_profile_short_bio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/user_profile_name"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="12dp"
+                android:maxLines="1"
+                android:text=""
+                android:textColor="#fff"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/profile_layout"
+            android:layout_marginTop="10dp"
+            android:id="@+id/call_profile"
+            >
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:background="#ffffff"
+                android:padding="20dp"
+                android:elevation="5dp"
+                app:srcCompat="@drawable/ic_call"
+                android:id="@+id/call"/>
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:background="#ffffff"
+                android:padding="20dp"
+                android:elevation="5dp"
+                app:srcCompat="@drawable/ic_alarm"
+                android:onClick="alarm" />
+
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:background="#ffffff"
+                android:elevation="5dp"
+                android:layout_marginRight="10dp"
+                app:srcCompat="@drawable/ic_sms"
+                android:layout_weight="1"
+                android:id="@+id/sms"/>
+
+
+        </LinearLayout>
+
+        <include
+            layout="@layout/banner_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/call_profile"
+            android:id="@+id/neww"/>
+
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/neww"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="#fff"
+                android:padding="20dp"
+                android:drawableRight="@drawable/ic_arrow"
+                android:textColor="#000000"
+                android:clickable="true"
+                android:elevation="4dp"
+                android:id="@+id/personal_info"
+                android:text="Personal Details" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:drawableRight="@drawable/ic_arrow"
+                android:textColor="#000000"
+                android:layout_marginBottom="3dp"
+                android:layout_marginTop="3dp"
+                android:background="#fff"
+                android:clickable="true"
+                android:elevation="4dp"
+                android:padding="20dp"
+                android:id="@+id/doctor_info"
+                android:text="Doctor Details" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="#fff"
+                android:clickable="true"
+                android:drawableRight="@drawable/ic_arrow"
+                android:textColor="#000000"
+                android:elevation="4dp"
+                android:padding="20dp"
+                android:id="@+id/allergy_info"
+                android:text="Allergies" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_marginBottom="3dp"
+                android:drawableRight="@drawable/ic_arrow"
+                android:textColor="#000000"
+                android:layout_marginTop="3dp"
+                android:background="#fff"
+                android:clickable="true"
+                android:elevation="4dp"
+                android:id="@+id/blood_info"
+                android:padding="20dp"
+                android:text="Blood Group" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="#fff"
+                android:drawableRight="@drawable/ic_arrow"
+                android:textColor="#000000"
+                android:clickable="true"
+                android:elevation="4dp"
+                android:id="@+id/medication_info"
+                android:padding="20dp"
+                android:text="Medications" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="#fff"
+                android:drawableRight="@drawable/ic_arrow"
+                android:textColor="#000000"
+                android:id="@+id/histories_info"
+                android:clickable="true"
+                android:elevation="4dp"
+                android:padding="20dp"
+                android:text="Histories" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</ScrollView>

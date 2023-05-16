@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.rashedlone.pocketdoctor">
+
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-3968073718071316~9087013847"/>
+        <activity
+            android:name="com.rashedlone.pocketdoctor.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+
+        </activity>
+        <activity android:name="com.rashedlone.pocketdoctor.DoctorDetails"
+            android:label="Doctor Details" />
+        <activity android:name="com.rashedlone.pocketdoctor.PersonalDetails"
+            android:label="Personal Details"/>
+        <activity android:name="com.rashedlone.pocketdoctor.Allergies"
+            android:label="Allergies"/>
+        <activity android:name="com.rashedlone.pocketdoctor.Medications"
+            android:label="Medications"/>
+        <activity android:name="com.rashedlone.pocketdoctor.Histories"
+            android:label="Histories"/>
+        <activity android:name="com.rashedlone.pocketdoctor.Setting"
+            android:label="Settings"/>
+
+        <activity android:name="com.rashedlone.pocketdoctor.StartActivity"
+            android:label="Pocket Doctor"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+
+        <activity android:name="com.rashedlone.pocketdoctor.Privacy"
+            android:label="Pocket Doctor"
+           >
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+        <receiver android:name="com.rashedlone.pocketdoctor.AlarmReceiver" />
+    </application>
+
+</manifest>

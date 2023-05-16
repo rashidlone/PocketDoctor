@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include
+            layout="@layout/banner_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/neww"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/neww"
+        android:orientation="vertical">
+
+
+
+
+        <ProgressBar
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_centerInParent="true"
+            android:id="@+id/process"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:id="@+id/na"
+            android:textStyle="bold"
+            android:padding="10dp"
+            android:textSize="18sp"
+            tools:ignore="HardcodedText" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:id="@+id/b"
+            android:layout_below="@+id/na"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="First Name"
+                android:padding="10dp"
+                tools:ignore="HardcodedText" />
+
+            <EditText
+                android:id="@+id/first"
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:padding="10dp"
+                tools:ignore="HardcodedText" />
+
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:id="@+id/c"
+            android:layout_below="@+id/b"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Middle Name"
+                android:padding="10dp"
+                tools:ignore="HardcodedText" />
+
+            <EditText
+                android:id="@+id/middle"
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                />
+
+        </LinearLayout>
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:id="@+id/d"
+            android:layout_below="@+id/c"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Last Name"
+                android:padding="10dp"
+                tools:ignore="HardcodedText" />
+
+            <EditText
+                android:id="@+id/last"
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                tools:ignore="HardcodedText" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Address"
+            android:id="@+id/ad"
+            android:layout_below="@+id/d"
+            android:textStyle="bold"
+            android:padding="10dp"
+            android:textSize="18sp"
+            tools:ignore="HardcodedText" />
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:id="@+id/e"
+            android:layout_below="@+id/ad"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Street"
+                android:padding="10dp"
+                tools:ignore="HardcodedText" />
+
+            <EditText
+                android:id="@+id/street"
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                tools:ignore="HardcodedText" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:id="@+id/f"
+            android:layout_below="@+id/e"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="City"
+                android:padding="10dp"
+                tools:ignore="HardcodedText" />
+
+            <EditText
+                android:id="@+id/city"
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                tools:ignore="HardcodedText" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:id="@+id/g"
+            android:layout_below="@+id/f"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="State/Province"
+                android:padding="10dp"
+                tools:ignore="HardcodedText" />
+
+            <EditText
+                android:id="@+id/state"
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                tools:ignore="HardcodedText" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:id="@+id/h"
+            android:layout_below="@+id/g"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Zip/Postal Code"
+                android:padding="10dp"
+                tools:ignore="HardcodedText" />
+
+            <EditText
+                android:id="@+id/zip"
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:inputType="number"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                tools:ignore="HardcodedText" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:id="@+id/i"
+            android:layout_below="@+id/h"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Country"
+                android:padding="10dp"
+                tools:ignore="HardcodedText" />
+
+            <EditText
+                android:id="@+id/country"
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                tools:ignore="HardcodedText" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:id="@+id/j"
+            android:layout_below="@+id/i"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Phone"
+                android:padding="10dp"
+                tools:ignore="HardcodedText" />
+
+            <EditText
+                android:id="@+id/phone"
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:inputType="phone"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                tools:ignore="HardcodedText" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+</ScrollView>
+
+
+
